@@ -1,0 +1,334 @@
+/*POLICES*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: "Bebas Neue", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* font-family: "Staatliches", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+/*COULEURS
+VERT #BBDBB4
+VIOLET #533B4D
+ROUGE #EF6461
+NOIR #041F1E
+BLANC #F1F7ED
+*/
+
+/*GENERAL*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Staatliches", sans-serif;
+    background-image: url(/media/deepwater.jpg);
+    background-size: cover;
+    color: #F1F7ED;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: underline overline #EF6461;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    font-family: "Inter", sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 5vh;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4vh;
+}
+
+/*IMAGES ICONES*/
+.logo {
+    height: 10vh;
+    background-color: #F1F7ED;
+    border-radius: 40%;
+}
+
+
+/*HEADER*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    background-image: url(/media/peniche_photo.jpg);
+    background-size: cover;
+    background-position: center 95%;
+}
+
+
+/*NAV*/
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+ul{
+    list-style: none;
+    padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  color: #F1F7ED;
+}
+
+a::before,
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #EF6461;
+  transition: all 0.5s;
+}
+
+a::before {
+  top: 0;
+  left: 0;
+}
+
+a::after {
+  bottom: 0;
+  right: 0;
+}
+
+a:hover::before {
+  width: 100%;
+  transition: width 0.25s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+  transition: width 0.25s ease-in-out 0.25s;
+}
+
+/*NAVACTIVE*/
+.nav-active{
+    color: #EF6461;
+}
+
+/*ARTICLE*/
+.text{
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+article{
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.article-index{
+    background-image: url(/media/musiciens_ponton.jpg);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px #041F1E;
+}
+
+.article-about{
+    background-image: url(/media/amsterdam_sombre.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px #041F1E;
+}
+
+
+/*ASIDE*/
+.caroussel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside hr{
+    color: #EF6461;
+    width: 93%;
+}
+
+aside img {
+    height: 15vh;
+    border: #F1F7ED solid 3px;
+    border-radius: 40%;
+}
+
+aside img:hover{
+    border: solid #EF6461 3px;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+}
+
+
+/*PROGRAMMATION*/
+.prog-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2vh;
+    color: #EF6461;
+}
+
+.aff-prog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30vh;
+    text-shadow: 1px 1px 2px #041F1E;
+}
+
+.aff1{
+    background-image: url(/media/psymonks.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.aff2{
+    background-image: url(/media/vcl.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.aff3{
+    background-image: url(/media/jomaf.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/*PRESTATIONS*/
+.presta-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 4vh;
+    text-shadow: 1px 1px 2px #041F1E;
+}
+
+.presta-container h3{
+    text-decoration: underline overline #EF6461;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.presta-container ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.presta-container i{
+    color: #EF6461;
+}
+
+.presta-g, .presta-d{
+    width: 50vh;
+    height: 22vh;
+    border-radius: 10px;
+}
+
+.presta-g{
+    background-image: url(/media/groupe_sur_ponton.jpg);
+    background-size: cover;
+}
+
+.presta-d{
+    background-image: url(/media/musicienss_ponton2.jpg);
+    background-size: cover;
+}
+
+
+/*FORM*/
+form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form input, form textarea{
+    font-family: "Inter", sans-serif;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin: 1vh;
+    padding: 1vh;
+    border-color: #EF6461;
+    border-radius: 10px;
+    background-color: #F1F7ED;
+    color: #041F1E;
+}
+
+.bouton-envoyer{
+    background-color: #EF6461;
+    color: #F1F7ED;
+}
+
+/*colonnes gauche et droite*/
+.col-g{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-d{
+    display: flex;
+    flex-direction: column;
+}
+
+/*GRID*/
+body {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 1/7;
+}
+
+nav {
+    grid-row: 2/5;
+    grid-column: 1/2;
+}
+
+article {
+    grid-row: 2/5;
+    grid-column: 2/7;
+}
+
+aside {
+    grid-row: 5;
+    grid-column: 1/7;
+}
+
+footer {
+    grid-row: 6;
+    grid-column: 1/7;
+}
