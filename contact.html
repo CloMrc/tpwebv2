@@ -27,7 +27,7 @@
 
     <article>
         <h1>CONTACTEZ CARGO SONORE</h1>
-        <form>
+        <form class="form-contact">
             <div class="col-g">
                 <input type="text" placeholder="Votre Nom *" required>
                 <input type="text" placeholder="Votre Prénom">
@@ -38,8 +38,6 @@
                 <textarea placeholder="Votre Message *" required></textarea>
                 <input class="bouton-envoyer" type="submit">
             </div>
-            
-            
         </form>
     </article>
 
@@ -60,9 +58,27 @@
     </aside>
 
     <footer>
-        <img class="logo" src="./media/logo.png" alt="Logo de Cargo Sonore" title="Logo de Cargo Sonore">
-        <br>
-        <i>&#169;2025</i>
+        <div>
+            <ul>Horaires
+                <li>Mardi - Jeudi : 18h - 23h</li>
+                <li>Vendredi - Samedi : 17h - 2h</li>
+                <li>Dimanche : 17h - 22h</li>
+            </ul>
+        </div>
+        <div>
+            <img class="logo" src="./media/logo.png" alt="Logo de Cargo Sonore" title="Logo de Cargo Sonore">
+            <br>
+            <i>&#169;2025</i>
+        </div>
+        <div class="newsletter">
+            <h4>Abonnez-vous à notre newsletter</h4>
+            <form action="" method="post" class="newsletter-form">
+                <div class="input-wrapper">
+                    <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+                    <button type="submit">S'abonner</button>
+                </div>
+            </form>
+        </div>
     </footer>
 </body>
 

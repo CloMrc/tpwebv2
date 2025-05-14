@@ -23,7 +23,7 @@ body {
 
 body {
     font-family: "Staatliches", sans-serif;
-    background-image: url(/media/deepwater.jpg);
+    background-image: url(../media/deepwater.jpg);
     background-size: cover;
     color: #F1F7ED;
 }
@@ -70,10 +70,12 @@ header{
     align-items: center;
     justify-content: flex-end;
     padding-right: 5rem;
-    background-image: url(/media/peniche_photo.jpg);
+    background-image: url(../media/peniche_photo.jpg);
     background-size: cover;
     background-position: center 95%;
 }
+
+
 
 
 /*NAV*/
@@ -144,7 +146,7 @@ article{
 }
 
 .article-index{
-    background-image: url(/media/musiciens_ponton.jpg);
+    background-image: url(../media/musiciens_ponton.jpg);
     background-size: cover;
     background-position: 50%;
     border-radius: 10px;
@@ -152,7 +154,7 @@ article{
 }
 
 .article-about{
-    background-image: url(/media/amsterdam_sombre.jpg);
+    background-image: url(../media/amsterdam_sombre.jpg);
     background-size: cover;
     background-position: bottom;
     border-radius: 10px;
@@ -184,7 +186,39 @@ aside img:hover{
 
 /*FOOTER*/
 footer {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+}
+
+.newsletter-form .input-wrapper {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #EF6461;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form button {
+  background-color: #EF6461;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #F1F7ED;
+  color: #EF6461;
 }
 
 
@@ -207,19 +241,19 @@ footer {
 }
 
 .aff1{
-    background-image: url(/media/psymonks.jpg);
+    background-image: url(../media/psymonks.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 
 .aff2{
-    background-image: url(/media/vcl.jpg);
+    background-image: url(../media/vcl.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 
 .aff3{
-    background-image: url(/media/jomaf.jpg);
+    background-image: url(../media/jomaf.jpg);
     background-size: cover;
     border-radius: 10px;
 }
@@ -255,24 +289,24 @@ footer {
 }
 
 .presta-g{
-    background-image: url(/media/groupe_sur_ponton.jpg);
+    background-image: url(../media/groupe_sur_ponton.jpg);
     background-size: cover;
 }
 
 .presta-d{
-    background-image: url(/media/musicienss_ponton2.jpg);
+    background-image: url(../media/musicienss_ponton2.jpg);
     background-size: cover;
 }
 
 
 /*FORM*/
-form{
+.form-contact{
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-form input, form textarea{
+.form-contact input, .form-contact textarea{
     font-family: "Inter", sans-serif;
     border-radius: 3px;
     font-size: 1rem;
@@ -284,7 +318,7 @@ form input, form textarea{
     color: #041F1E;
 }
 
-.bouton-envoyer{
+.form-contact .bouton-envoyer{
     background-color: #EF6461;
     color: #F1F7ED;
 }
