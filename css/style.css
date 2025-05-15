@@ -5,14 +5,13 @@
 /* font-family: "Staatliches", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* font-family: "Inter", sans-serif; */
-/*commentaire test github*/
+
 /*COULEURS
 VERT #BBDBB4
 VIOLET #533B4D
 ROUGE #EF6461
 NOIR #041F1E
-BLANC #F1F7ED
-*/
+BLANC #F1F7ED */
 
 /*GENERAL*/
 html,
@@ -30,7 +29,7 @@ body {
 
 h1 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 10vh;
+    font-size: 6rem;
     margin-top: 0;
     margin-bottom: 0;
     text-decoration: underline overline #EF6461;
@@ -43,29 +42,32 @@ h4 {
     font-family: "Inter", sans-serif;
 }
 
-h2{
+h2 {
     text-align: center;
-    font-size: 5vh;
+    font-size: 3rem;
     margin: 0;
     margin-bottom: 1vh;
 }
 
-h3{
+h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 4vh;
+    font-size: 1.5rem;
 }
 
 /*IMAGES ICONES*/
 .logo {
     height: 10vh;
     background-color: #F1F7ED;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 
+img {
+    max-width: 100%;
+}
 
 /*HEADER*/
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -75,11 +77,8 @@ header{
     background-position: center 95%;
 }
 
-
-
-
 /*NAV*/
-nav{
+nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -87,65 +86,66 @@ nav{
     margin-left: 2rem;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 1rem;
 }
 
 a {
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  color: #F1F7ED;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    color: #F1F7ED;
 }
 
 a::before,
 a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #EF6461;
-  transition: all 0.5s;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #EF6461;
+    transition: all 0.5s;
 }
 
 a::before {
-  top: 0;
-  left: 0;
+    top: 0;
+    left: 0;
 }
 
 a::after {
-  bottom: 0;
-  right: 0;
+    bottom: 0;
+    right: 0;
 }
 
 a:hover::before {
-  width: 100%;
-  transition: width 0.25s ease-in-out;
+    width: 100%;
+    transition: width 0.25s ease-in-out;
 }
 
 a:hover::after {
-  width: 100%;
-  transition: width 0.25s ease-in-out 0.25s;
+    width: 100%;
+    transition: width 0.25s ease-in-out 0.25s;
 }
 
 /*NAVACTIVE*/
-.nav-active{
+.nav-active {
     color: #EF6461;
 }
 
 /*ARTICLE*/
-.text{
+.text {
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
 }
 
-article{
+article {
     padding: 1rem;
     margin-right: 2rem;
+    margin-left: 2rem;
 }
 
-.article-index{
+.article-index {
     background-image: url(../media/musiciens_ponton.jpg);
     background-size: cover;
     background-position: 50%;
@@ -153,7 +153,7 @@ article{
     text-shadow: 1px 1px 2px #041F1E;
 }
 
-.article-about{
+.article-about {
     background-image: url(../media/amsterdam_sombre.jpg);
     background-size: cover;
     background-position: bottom;
@@ -161,15 +161,14 @@ article{
     text-shadow: 1px 1px 2px #041F1E;
 }
 
-
 /*ASIDE*/
-.caroussel{
+.caroussel {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-aside hr{
+aside hr {
     color: #EF6461;
     width: 93%;
 }
@@ -180,7 +179,7 @@ aside img {
     border-radius: 40%;
 }
 
-aside img:hover{
+aside img:hover {
     border: solid #EF6461 3px;
 }
 
@@ -192,46 +191,50 @@ footer {
 }
 
 .newsletter-form .input-wrapper {
-  display: flex;
-  max-width: 400px;
-  margin: 0 auto;
-  border: 2px solid #EF6461;
-  border-radius: 10px;
-  overflow: hidden;
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #EF6461;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newsletter-form input,
+button {
+    font-family: "Inter", sans-serif;
 }
 
 .newsletter-form input[type="email"] {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
 }
 
 .newsletter-form button {
-  background-color: #EF6461;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #EF6461;
+    border: none;
+    padding: 10px 20px;
+    color: #F1F7ED;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .newsletter-form button:hover {
-  background-color: #F1F7ED;
-  color: #EF6461;
-}
-
-
-/*PROGRAMMATION*/
-.prog-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 2vh;
+    background-color: #F1F7ED;
     color: #EF6461;
 }
 
-.aff-prog{
+/*PROGRAMMATION*/
+.prog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #EF6461;
+}
+
+.aff-prog {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,73 +243,74 @@ footer {
     text-shadow: 1px 1px 2px #041F1E;
 }
 
-.aff1{
+.aff1 {
     background-image: url(../media/psymonks.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 
-.aff2{
+.aff2 {
     background-image: url(../media/vcl.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 
-.aff3{
+.aff3 {
     background-image: url(../media/jomaf.jpg);
     background-size: cover;
     border-radius: 10px;
 }
 
 /*PRESTATIONS*/
-.presta-container{
+.presta-container {
     display: flex;
     justify-content: space-around;
-    font-size: 4vh;
+    font-size: 2.5rem;
     text-shadow: 1px 1px 2px #041F1E;
 }
 
-.presta-container h3{
+.presta-container h3 {
     text-decoration: underline overline #EF6461;
     text-align: center;
     margin-top: 0.5rem;
 }
 
-.presta-container ul{
+.presta-container ul {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.presta-container i{
+.presta-container i {
     color: #EF6461;
 }
 
-.presta-g, .presta-d{
+.presta-g,
+.presta-d {
     width: 50vh;
     height: 22vh;
     border-radius: 10px;
 }
 
-.presta-g{
+.presta-g {
     background-image: url(../media/groupe_sur_ponton.jpg);
     background-size: cover;
 }
 
-.presta-d{
+.presta-d {
     background-image: url(../media/musicienss_ponton2.jpg);
     background-size: cover;
 }
 
-
 /*FORM*/
-.form-contact{
+.form-contact {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.form-contact input, .form-contact textarea{
+.form-contact input,
+.form-contact textarea {
     font-family: "Inter", sans-serif;
     border-radius: 3px;
     font-size: 1rem;
@@ -318,18 +322,18 @@ footer {
     color: #041F1E;
 }
 
-.form-contact .bouton-envoyer{
+.form-contact .bouton-envoyer {
     background-color: #EF6461;
     color: #F1F7ED;
 }
 
 /*colonnes gauche et droite*/
-.col-g{
+.col-g {
     display: flex;
     flex-direction: column;
 }
 
-.col-d{
+.col-d {
     display: flex;
     flex-direction: column;
 }
@@ -365,4 +369,65 @@ aside {
 footer {
     grid-row: 6;
     grid-column: 1/7;
+}
+
+/*test responsive */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .prog-container,
+    .presta-container,
+    .caroussel,
+    .form-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .presta-g,
+    .presta-d,
+    .aff-prog {
+        width: 90%;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .newsletter-form .input-wrapper {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form-contact {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    header,
+    nav,
+    article,
+    aside,
+    footer {
+        grid-column: 1 / 2 !important;
+    }
+
+    nav {
+        grid-row: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
 }
