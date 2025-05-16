@@ -372,13 +372,28 @@ footer {
 }
 
 /*test responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
+    body {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
     nav {
         flex-direction: row;
         font-size: 1.5rem;
         justify-content: center;
         margin: 0;
         gap: 1rem;
+        grid-row: auto;
+    }
+
+        header,
+    nav,
+    article,
+    aside,
+    footer {
+        grid-column: 1 / 2;
     }
 
     .prog-container,
@@ -398,36 +413,8 @@ footer {
         gap: 2rem;
     }
 
-    .newsletter-form .input-wrapper {
+    footer{
         flex-direction: column;
-        width: 90%;
-    }
-
-    .form-contact {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    body {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    header,
-    nav,
-    article,
-    aside,
-    footer {
-        grid-column: 1 / 2 !important;
-    }
-
-    nav {
-        grid-row: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        display: block;
+        padding-bottom: 2rem;
     }
 }
