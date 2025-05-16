@@ -381,13 +381,23 @@ footer {
         grid-template-rows: auto;
     }
 
+    h1{
+    font-size: 5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
     nav {
         flex-direction: row;
-        font-size: 1.5rem;
+        font-size: 3rem;
         justify-content: center;
         margin: 0;
         gap: 1rem;
         grid-row: auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     header,
@@ -407,6 +417,11 @@ footer {
         gap: 2rem;
     }
 
+    .caroussel img{
+        width: 450px;
+        height: auto;
+    }
+
     .presta-g,
     .presta-d,
     .aff-prog {
@@ -418,5 +433,6 @@ footer {
     footer {
         flex-direction: column;
         padding-bottom: 2rem;
+        font-size: 2.5rem;
     }
 }
