@@ -98,6 +98,7 @@ a {
     color: #F1F7ED;
 }
 
+/* NAV HOVER */
 a::before,
 a::after {
     content: "";
@@ -285,6 +286,7 @@ button {
     color: #EF6461;
 }
 
+/* COLONES G=Gauche D=droite */
 .presta-g,
 .presta-d {
     width: 50vh;
@@ -388,7 +390,7 @@ footer {
         grid-row: auto;
     }
 
-        header,
+    header,
     nav,
     article,
     aside,
@@ -413,7 +415,7 @@ footer {
         gap: 2rem;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         padding-bottom: 2rem;
     }
